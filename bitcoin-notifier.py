@@ -6,16 +6,17 @@ from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from requests import Request, Session
 import argparse
 
-api_key = '92e72e72-94d4-464b-b422-612182b99528'
+api_key = '92e72e72-94d4-464b-b422-612182b99528'  # Bitcoin API
 
-ifttt_webhook_url = 'https://maker.ifttt.com/trigger/{}/with/key/dCtU1xDDhQLnzMw1hZGldj'
+ifttt_webhook_url = 'https://maker.ifttt.com/trigger/{}/with/key/dCtU1xDDhQLnzMw1hZGldj'  # webhooks URL
 
 
 def get_latest_bitcoin_price():
+    # coin marketcap API
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
     parameters = {
-        'slug': 'bitcoin',
-        'convert': 'USD'
+        'slug': 'bitcoin',  # change to get different cryptocurrencies eg. bitcoin,ethereum
+        'convert': 'USD'  # calculate market quotes in up to 120 currencies
     }
     headers = {
         'Accepts': 'application/json',
