@@ -72,7 +72,7 @@ bitcoin-notifier -h
 
 ### OUTPUT
 
-usage: bitcoin-notifier -e 10000 -t 60 [-h][-d decision] [-t interval][-e threshold]
+usage: bitcoin-notifier -e 10000 -t 1 [-h][-d decision] [-t interval][-e threshold]
 
 ### HELP
 
