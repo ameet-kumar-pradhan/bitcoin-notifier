@@ -80,8 +80,7 @@ def main(BITCOIN_PRICE_THRESHOLD, interval):
             # Reset the history
             bitcoin_history = []
 
-        # Sleep for 1 minutes
-        # (For testing purposes you can set it to a lower number)
+        # Sleep for 1 minute(s)
         time.sleep(interval * 60)
 
 
