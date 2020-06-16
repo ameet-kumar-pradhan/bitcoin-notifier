@@ -17,9 +17,9 @@ We’re going to use the popular automation website IFTTT.
 We’re going to create there IFTTT applets:
 
 One for emergency notification when Bitcoin price falls under a certain threshold and
-one for regular Telegram and one for Slack updates on the Bitcoin price.
+one for regular Telegram and one for IFTTT updates on the Bitcoin price.
 
-These will be triggered by our Python app which will consume the data from the Coindesk API.
+These will be triggered by our Python app which will consume the data from the coinmarketcap API.
 
 An IFTTT applet is composed of two parts: a trigger and an action.
 
