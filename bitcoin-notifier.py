@@ -1,9 +1,8 @@
 from datetime import datetime
 import time
-import json
 import requests
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-from requests import Request, Session
+from requests import Session
 import argparse
 
 api_key = '92e72e72-94d4-464b-b422-612182b99528'  # Bitcoin API
