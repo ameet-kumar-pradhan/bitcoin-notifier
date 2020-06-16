@@ -7,15 +7,18 @@ import argparse
 
 api_key = '92e72e72-94d4-464b-b422-612182b99528'  # Bitcoin API
 
-ifttt_webhook_url = 'https://maker.ifttt.com/trigger/{}/with/key/dCtU1xDDhQLnzMw1hZGldj'  # webhooks URL
+# webhooks URL
+ifttt_webhook_url = 'https://maker.ifttt.com/trigger/{}/with/key/dCtU1xDDhQLnzMw1hZGldj'
 
 
 def get_latest_bitcoin_price():
     # coin marketcap API
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
     parameters = {
-        'slug': 'bitcoin',  # change to get different cryptocurrencies eg. bitcoin,ethereum
-        'convert': 'USD'  # calculate market quotes in up to 120 currencies
+        # change to get different cryptocurrencies eg. bitcoin,ethereum
+        'slug': 'bitcoin',
+        # calculate market quotes in up to 120 currencies
+        'convert': 'USD'
     }
     headers = {
         'Accepts': 'application/json',
@@ -105,7 +108,7 @@ def cli():
         '-t',
         metavar='interval',
         default=[5],
-        type=int,
+        type=float,
         nargs=1,
         help=' Enter time interval',
     )
